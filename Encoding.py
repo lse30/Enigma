@@ -160,9 +160,9 @@ def encode(rotors, starts, plain_text, plugboard=None):
 
             code += current
 
-            if (len(code) - spaces) % 5 == 0:
-                code += ' '
-                spaces += 1
+            # if (len(code) - spaces) % 5 == 0:
+            #     code += ' '
+            #     spaces += 1
 
             starts[2] = (starts[2] + 1) % 26
 
@@ -201,6 +201,6 @@ plugboard - not always needed but up to 10 combinations on unique letters can be
 """
 
 
-plugs = ['cq', 'bi', 'fu', 'jw', 'al', 'rs']
-print(encode(['I', 'III', 'I'], 'hel', 'sorqf emygg'))
+plugs = ['he', 'ys', 'tf', 'an', 'wu', 'mi']
+print(encode(['IV', 'V', 'II'], 'hey', 'fzdgenguzh', plugs))
 #press run to decode!
